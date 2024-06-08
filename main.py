@@ -50,7 +50,8 @@ def main_game():
 
 if __name__ == '__main__':
     print("Bagels, a deductive logic game. I am thinking of a 3-digit number. Try to guess what it is."
-          "\nHere are some clues: When I say: That means: Pico - one digit is correct but in the wrong position. "
+          "\nHere are some clues: When I say: That means: "
+          "\nPico - one digit is correct but in the wrong position. "
           "\nFermi - one digit is correct and in the right position. "
           "\nBagels No digit is correct. "
           "\nI have thought up a number.You have 10 guesses to get it.")
