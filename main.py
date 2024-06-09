@@ -34,7 +34,7 @@ def main_game():
     guesses_taken = 0
 
     while guesses_taken < max_guesses:
-        user_input = input('Enter a three-digit number here: ').strip()
+        user_input = input('Enter a three-digit number here: ').strip().lower()
         if user_input.isdigit() and len(user_input) == 3:
             if secret_num == user_input:
                 print('Congratulations, you won')
@@ -43,6 +43,8 @@ def main_game():
                 print('Hmm, not quite right, here is a clue')
                 print(get_clues(secret_num, user_input))
                 guesses_taken += 1
+        elif user_input == 'g':
+            print(f"You have {max_guesses - guesses_taken} attempts left")
         else:
             print('Wrong input, try again.')
     print('You lost')
